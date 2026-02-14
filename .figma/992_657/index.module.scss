@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.group288 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  width: 165px;
+  height: 209px;
+
+  .autoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+
+    .iPhone13141A2 {
+      width: 45px;
+      height: 97px;
+    }
+
+    .iPhone1314212 {
+      margin-top: 15px;
+      width: 45px;
+      height: 97px;
+    }
+  }
+}

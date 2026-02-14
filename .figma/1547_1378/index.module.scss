@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.union {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 66px 35px 35px 34px;
+  width: 353px;
+  height: 365px;
+  background-image: url(../image/mli07w4t-tvs3501.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .startupsFunded {
+    margin: 3px 0px 0px;
+    line-height: 35px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .a60 {
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  .autoWrapper {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    padding-right: 18px;
+    padding-left: 21px;
+  }
+
+  .line11 {
+    margin-top: 38px;
+    border-radius: 50%;
+    background: #df2202;
+    width: 284px;
+    height: 4px;
+  }
+
+  .autoWrapper2 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 33px;
+    padding-right: 54px;
+    padding-left: 5px;
+  }
+
+  .line12 {
+    margin-top: 37px;
+    border-radius: 50%;
+    background: #df2202;
+    width: 284px;
+    height: 4px;
+  }
+
+  .autoWrapper3 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-top: 34px;
+    padding-right: 102px;
+    padding-left: 22px;
+  }
+}

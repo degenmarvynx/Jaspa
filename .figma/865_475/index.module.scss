@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame229 {
+  position: relative;
+  width: 1440px;
+  height: 630px;
+  overflow-y: auto;
+
+  .rectangle127 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #044ea4;
+    width: 1440px;
+    height: 630px;
+  }
+
+  .jaspaLongLineSkyWith {
+    position: absolute;
+    top: 107px;
+    left: -106px;
+    width: 629px;
+    height: 417px;
+    rotate: -90deg;
+  }
+
+  .jaspaLongLineSkyWith2 {
+    position: absolute;
+    top: 106px;
+    right: -106px;
+    width: 630px;
+    height: 417px;
+    rotate: 90deg;
+  }
+
+  .bankingServices {
+    position: absolute;
+    top: 90px;
+    left: 406px;
+    width: 629px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f5f5f5;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+  }
+
+  .group222 {
+    position: absolute;
+    top: 178px;
+    left: 208px;
+    width: 1024px;
+    height: 386px;
+
+    .rectangle123 {
+      position: absolute;
+      top: 43px;
+      left: 11px;
+      border-radius: 15px;
+      background: #012e6d;
+      width: 1002px;
+      height: 300px;
+      rotate: -5deg;
+    }
+
+    .rectangle122 {
+      display: flex;
+      position: absolute;
+      top: 43px;
+      left: 11px;
+      align-items: flex-start;
+      border: 2px solid #012e6d;
+      border-radius: 15px;
+      background: #f5f5f5;
+      padding: 59px 268px 57px 79px;
+      width: 1000px;
+      height: 300px;
+
+      .includedAcrossPerson {
+        width: 649px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #012e6d;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame15 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 1705px;
+  height: 953px;
+  row-gap: 10px;
+
+  .jaspaWaterfallBlueWi {
+    flex-shrink: 0;
+    align-self: stretch;
+    opacity: 0.05;
+    width: 1685px;
+    height: 933px;
+  }
+}

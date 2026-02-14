@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.peopleReachedThrough4 {
+  width: 275px;
+  height: 119px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 0;
+
+  .peopleReachedThrough {
+    line-height: 23px;
+    letter-spacing: 0;
+    color: #044ea4;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .peopleReachedThrough2 {
+    line-height: 23px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .peopleReachedThrough3 {
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

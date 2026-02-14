@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.group74 {
+  position: relative;
+  opacity: 0.25;
+  width: 1440px;
+  height: 344px;
+  rotate: -180deg;
+
+  .rectangleDotsGradien {
+    position: absolute;
+    top: 0;
+    left: 357px;
+    width: 726px;
+    height: 344px;
+  }
+
+  .rectangleDotsGradien2 {
+    position: absolute;
+    top: 0;
+    right: 714px;
+    width: 726px;
+    height: 344px;
+    rotate: 180deg;
+  }
+}

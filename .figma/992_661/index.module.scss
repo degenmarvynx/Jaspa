@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.fAQsHeaderBold {
+  position: relative;
+  width: 300px;
+  height: 86px;
+
+  .rectangle130 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px #00000040;
+    background: #044ea4;
+    padding: 24px 111px 31px;
+    width: 300px;
+    height: 85px;
+
+    .fAQs {
+      line-height: 30px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+
+  .rectangle134 {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    border-radius: 0px 0px 8px 8px;
+    background: #df2202;
+    width: 300px;
+    height: 8px;
+  }
+}

@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+.component13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed #8a38f5;
+  padding: 19px;
+  width: 1480px;
+  height: 1830px;
+  overflow: hidden;
+
+  .aboutUs4 {
+    margin: 13px 0px 0px 104px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f5f5f5;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .productsServices {
+    margin: 13px 0px 0px 41px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f5f5f5;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .business {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 24px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #044ea4;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .rectangle33 {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    margin-left: 42px;
+    border-radius: 5px;
+    background: #87b6ed;
+    padding: 10px 12px 11px 15px;
+  }
+
+  .rectangle22 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 108px;
+    border-radius: 6px;
+    background: #87b6ed;
+    padding: 11px 17px 11px 18px;
+
+    .personal2 {
+      width: 92px;
+      height: 24px;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+      line-height: 60px;
+      letter-spacing: 0;
+      white-space: nowrap;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .groupJaspaLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .jaspaLogoWithourBack {
+      width: 172px;
+      height: 62px;
+    }
+
+    .bankSmartLiveFree {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 4px 0px 0px;
+      width: 162px;
+      height: 13px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-style: italic;
+    }
+  }
+
+  .homePageHeader {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+
+    .rectangle2 {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      margin-left: 105px;
+      border-radius: 6px;
+      background: #f5f5f5;
+      padding: 14px 15px;
+
+      .personal {
+        width: 103px;
+        height: 27px;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        line-height: 60px;
+        letter-spacing: 0;
+        white-space: nowrap;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+
+    .rectangle3 {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 42px;
+      border-radius: 5px;
+      background: #87b6ed;
+      padding: 10px 12px 11px 15px;
+    }
+
+    .aboutUs {
+      margin: 13px 0px 0px 101px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .homePageHeader2 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+
+    .rectangle32 {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      margin-left: 34px;
+      border-radius: 5px;
+      background: #f5f5f5;
+      padding: 13px 11px 14px 14px;
+
+      .business2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 28px;
+        line-height: 60px;
+        letter-spacing: 0;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+
+    .aboutUs2 {
+      margin: 13px 0px 0px 98px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .homePageHeader3 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+
+    .aboutUs3 {
+      margin: 13px 0px 0px 98px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .productsServices2 {
+      margin: 13px 0px 0px 36px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .homePageHeader4 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+
+    .productsServices3 {
+      margin: 13px 0px 0px 28px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .resources {
+      margin: 13px 0px 0px 28px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .homePageHeader5 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+
+    .resources2 {
+      margin: 13px 0px 0px 33px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .contactUs {
+      margin: 13px 0px 0px 35px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .homePageHeader6 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 59px 34px;
+
+    .contactUs2 {
+      margin: 13px 0px 0px 34px;
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  .homePageHeader7 {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-top: 135px;
+    box-shadow: 0px 4px 50px 10px #00000040;
+    background: #044ea4;
+    padding: 27px 66px 34px 59px;
+  }
+}

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.group44 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  width: 510px;
+  height: 60px;
+
+  .group42 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 231px;
+    min-width: 231px;
+    height: 45px;
+
+    .licensedByCbn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 187px;
+      height: 30px;
+      line-height: 90px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .cbnLogoWithoutBackgr {
+      width: 34px;
+      height: 45px;
+    }
+  }
+
+  .line1 {
+    margin-top: 22px;
+    background: #f5f5f5;
+    width: 60px;
+    height: 3px;
+    rotate: 90deg;
+  }
+
+  .group43 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 236px;
+    min-width: 236px;
+    height: 45px;
+
+    .insuredBy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 30px;
+      line-height: 90px;
+      letter-spacing: 0;
+      color: #f5f5f5;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .ndicLogo2WithoutBack {
+      width: 106px;
+      height: 45px;
+    }
+  }
+}

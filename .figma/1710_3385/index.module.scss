@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.frameUssd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1140px;
+  height: 560px;
+
+  .rectangle73 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #87b6ed;
+    padding: 13px 136px 12px 13px;
+    width: 555px;
+    min-width: 555px;
+    height: 100px;
+
+    .rectangle78 {
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      background: #f5f5f5;
+      padding: 20px;
+
+      .a3 {
+        line-height: 35px;
+        letter-spacing: 0;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+
+    .uSsdBanking {
+      line-height: 35px;
+      letter-spacing: 0;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 45px;
+      font-weight: 600;
+    }
+  }
+
+  .rectangle76 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: #87b6ed;
+    padding: 55px 77px 117px 78px;
+
+    .cellphoneWithButtons {
+      width: 48px;
+      height: 75px;
+    }
+
+    .uSsdBanking2 {
+      margin: 38px 0px 0px;
+      line-height: 55px;
+      letter-spacing: 0;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 55px;
+      font-weight: 600;
+    }
+
+    .stayConnectedEvenWit {
+      margin: 45px 0px 0px;
+      width: 400px;
+      line-height: 35px;
+      letter-spacing: 0;
+      color: #012e6d;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 25px;
+    }
+  }
+}

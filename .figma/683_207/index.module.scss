@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.bureauDeBTimentModer {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 54px;
+  width: 1440px;
+  height: 294px;
+  background-image: url(../image/mlj8ywxk-1qtp5wo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .rectangle80 {
+    background: #012e6d9f;
+    width: 1440px;
+    height: 240px;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.group202 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1285px;
+  height: 90px;
+
+  .rectangle103 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #044ea4;
+    border-radius: 8px;
+    background: #87b6ed;
+    padding: 23px 161px 23px 48px;
+
+    .sokoto {
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #012e6d;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+
+  .rectangle102 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #044ea4;
+    border-radius: 8px;
+    background: #87b6ed;
+    padding: 13px 48px;
+
+    .sorryThereIsCurrentl {
+      width: 855px;
+      line-height: 30px;
+      letter-spacing: 0;
+      color: #012e6d;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}

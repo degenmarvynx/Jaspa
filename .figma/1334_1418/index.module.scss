@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.referral1 {
+  display: flex;
+  align-items: center;
+  border: 5px solid #df2202;
+  border-radius: 30px;
+  width: 570px;
+  height: 570px;
+  background-image: url(../image/mlc4fsmf-e09gfoh.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .rectangle178 {
+    border-radius: 30px;
+    background: #012e6d4d;
+    width: 570px;
+    height: 570px;
+  }
+}

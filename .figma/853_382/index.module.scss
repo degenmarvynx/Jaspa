@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.group219 {
+  position: relative;
+  width: 1178px;
+  height: 714px;
+
+  .rectangle123 {
+    position: absolute;
+    top: 57px;
+    left: 28px;
+    border-radius: 15px;
+    background: #012e6d;
+    width: 1121px;
+    height: 600px;
+    rotate: -6deg;
+  }
+
+  .rectangle122 {
+    display: flex;
+    position: absolute;
+    top: 71px;
+    left: 41px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #012e6d;
+    border-radius: 15px;
+    background: #f5f5f5;
+    padding: 61px 87px 60px;
+    width: 1096px;
+    height: 572px;
+
+    .kidsStudentsAccount {
+      line-height: 60px;
+      letter-spacing: 0;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 70px;
+      font-weight: 800;
+    }
+
+    .empowerTheNextGenera4 {
+      margin: 27px 0px 0px;
+      width: 918px;
+      line-height: 30px;
+      letter-spacing: 0;
+      color: #000000;
+      font-size: 0;
+
+      .empowerTheNextGenera {
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #012e6d;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+
+      .empowerTheNextGenera2 {
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+
+      .empowerTheNextGenera3 {
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+  }
+}

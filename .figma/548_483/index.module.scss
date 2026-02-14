@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.rectangle96 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #044ea4;
+  border-radius: 8px;
+  padding: 13px 39px 13px 48px;
+  width: 300px;
+  height: 70px;
+
+  .chooseOne {
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .keyboardArrowDown {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+}

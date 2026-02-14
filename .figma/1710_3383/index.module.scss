@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.frameDebit2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1140px;
+  height: 560px;
+
+  .rectangle71 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #87b6ed;
+    padding: 13px 184px 12px 13px;
+    width: 555px;
+    min-width: 555px;
+    height: 100px;
+
+    .rectangle77 {
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      background: #f5f5f5;
+      padding: 20px 24px 20px 25px;
+
+      .a1 {
+        line-height: 35px;
+        letter-spacing: 0;
+        color: #044ea4;
+        font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+
+    .debitCards {
+      line-height: 35px;
+      letter-spacing: 0;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 45px;
+      font-weight: 600;
+    }
+  }
+
+  .rectangle76 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: #87b6ed;
+    padding: 85px 77px 40px 78px;
+
+    .debitCardBlueWithout {
+      width: 74px;
+      height: 45px;
+    }
+
+    .debitCards2 {
+      margin: 45px 0px 0px;
+      line-height: 55px;
+      letter-spacing: 0;
+      color: #044ea4;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 55px;
+      font-weight: 600;
+    }
+
+    .enjoySeamlessSpendin {
+      margin: 45px 0px 0px;
+      width: 400px;
+      line-height: 35px;
+      letter-spacing: 0;
+      color: #012e6d;
+      font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 25px;
+    }
+  }
+}

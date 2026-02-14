@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.groupJaspaLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 172px;
+  height: 79px;
+
+  .jaspaLogoWithourBack {
+    width: 172px;
+    height: 62px;
+  }
+
+  .bankSmartLiveFree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0px 0px;
+    width: 162px;
+    height: 13px;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f5f5f5;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+  }
+}

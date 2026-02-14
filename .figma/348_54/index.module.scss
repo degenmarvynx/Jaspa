@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.rectangle52 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #044ea4;
+  border-radius: 15px;
+  background: #f5f5f5;
+  padding: 28px 38px 28px 39px;
+  width: 360px;
+  height: 205px;
+
+  .padlockWithShieldBlu {
+    width: 28px;
+    height: 30px;
+  }
+
+  .safeTrusted {
+    margin: 20px 0px 0px;
+    line-height: 35px;
+    letter-spacing: 0;
+    color: #012e6d;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .licensedByCbnAndInsu {
+    margin: 20px 0px 0px;
+    width: 279px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #044ea4;
+    font-family: Poppins, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
