@@ -19,9 +19,12 @@ export const metadata: Metadata = {
   description: 'Jaspa Microfinance Bank provides secure savings, flexible loans, and digital banking solutions. Join thousands of Nigerians banking the smart way.',
   keywords: 'microfinance, banking, savings, loans, digital banking, Nigeria, Jaspa',
   icons: {
-    icon: '/figma/favicon.jpeg',
-    shortcut: '/figma/favicon.jpeg',
-    apple: '/figma/favicon.jpeg',
+    icon: [
+      { url: '/figma/favicon.jpeg?v=2', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/figma/favicon.jpeg?v=2', sizes: '16x16', type: 'image/jpeg' },
+    ],
+    shortcut: '/figma/favicon.jpeg?v=2',
+    apple: '/figma/favicon.jpeg?v=2',
   },
   openGraph: {
     title: 'Jaspa MFB - Bank Smart. Live Free.',
@@ -43,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body className="font-sans antialiased overflow-x-hidden">
+      <body className="font-sans antialiased overflow-x-hidden" suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
