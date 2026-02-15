@@ -3,18 +3,20 @@
  
  type StateKey =
    | 'Abia' | 'Adamawa' | 'Akwa Ibom' | 'Anambra' | 'Bauchi' | 'Bayelsa' | 'Benue' | 'Borno'
-   | 'Cross River' | 'Delta' | 'Ebonyi' | 'Edo' | 'Ekiti' | 'Enugu' | 'Gombe' | 'Imo'
+  | 'Cross River' | 'Delta' | 'Ebonyi' | 'Edo' | 'Ekiti' | 'Enugu' | 'FCT' | 'Gombe' | 'Imo'
    | 'Jigawa' | 'Kaduna' | 'Kano' | 'Katsina' | 'Kebbi' | 'Kogi' | 'Kwara' | 'Lagos'
-   | 'Nasarawa' | 'Niger' | 'Ogun' | 'Ondo' | 'Osun' | 'Oyo' | 'Rivers' | 'Sokoto'
+  | 'Nasarawa' | 'Niger' | 'Ogun' | 'Ondo' | 'Osun' | 'Oyo' | 'Plateau' | 'Rivers' | 'Sokoto'
    | 'Taraba' | 'Yobe' | 'Zamfara' | 'FCT';
  
- const STATES: StateKey[] = [
-   'Abia','Adamawa','Akwa Ibom','Anambra','Bauchi','Bayelsa','Benue','Borno',
-   'Cross River','Delta','Ebonyi','Edo','Ekiti','Enugu','Gombe','Imo',
-   'Jigawa','Kaduna','Kano','Katsina','Kebbi','Kogi','Kwara','Lagos',
-   'Nasarawa','Niger','Ogun','Ondo','Osun','Oyo','Rivers','Sokoto',
-   'Taraba','Yobe','Zamfara','FCT'
- ];
+const STATES_BASE: StateKey[] = [
+  'Abia','Adamawa','Akwa Ibom','Anambra','Bauchi','Bayelsa','Benue','Borno',
+  'Cross River','Delta','Ebonyi','Edo','Ekiti','Enugu','FCT','Gombe','Imo',
+  'Jigawa','Kaduna','Kano','Katsina','Kebbi','Kogi','Kwara','Lagos',
+  'Nasarawa','Niger','Ogun','Ondo','Osun','Oyo','Plateau','Rivers','Sokoto',
+  'Taraba','Yobe','Zamfara'
+];
+
+const STATES: StateKey[] = [...STATES_BASE].sort((a, b) => a.localeCompare(b)) as StateKey[];
  
  const BRANCH_STATES = new Set<StateKey>([
    'Abia','Adamawa','Akwa Ibom','Anambra','Cross River','Delta','Ebonyi','Edo',
@@ -42,7 +44,7 @@
         <div className="mt-2 relative">
           <select
             id="state-select"
-            className={`appearance-none w-full md:w?[300px] h-[56px] md:h-[70px] rounded-[8px] border-2 border-[#044ea4] px-4 md:px-6 pr-10 md:pr-12 text-[#012e6d] text-[16px] md:text-[20px] font-medium leading-[24px] md:leading-[28px] ${selected ? 'bg-[#87b6ed]' : 'bg-white'} focus:outline-none focus:ring-2 focus:ring-[#044ea4]`}
+            className={`appearance-none w-full md:w-[300px] h-[56px] md:h-[70px] rounded-[8px] border-2 border-[#044ea4] px-4 md:px-6 pr-10 md:pr-12 text-[#012e6d] text-[16px] md:text-[20px] font-medium leading-[24px] md:leading-[28px] ${selected ? 'bg-[#87b6ed]' : 'bg-white'} focus:outline-none focus:ring-2 focus:ring-[#044ea4]`}
             aria-label="Select your state"
             value={selected}
             onChange={(e) => setSelected(e.target.value as StateKey)}
