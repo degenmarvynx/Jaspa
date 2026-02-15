@@ -7,7 +7,7 @@ export const AboutIntro: React.FC = () => {
     <section className="bg-white py-10 md:py-14">
       <Container>
         <div className="grid md:grid-cols-[380px_1fr] gap-8 md:gap-12 items-center">
-          <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[380px] rounded-[30px] border-[5px] border-[#df2202] overflow-hidden mx-auto md:mx-0">
+          <div className="relative w-[320px] h-[320px] md:w-[380px] md:h-[380px] rounded-[30px] overflow-hidden mx-auto md:mx-0">
             <Image src="/figma/who-we-are-photo.png" alt="" fill className="object-cover" />
             <div className="absolute inset-0 rounded-[30px] border-[5px] border-[#df2202] bg-[#012e6d]/35" />
             <div className="absolute inset-0 flex items-center justify-center">

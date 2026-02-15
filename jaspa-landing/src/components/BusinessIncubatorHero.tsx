@@ -10,7 +10,7 @@ export const BusinessIncubatorHero: React.FC = () => {
         <Image src="/figma/rectangle-188.png" alt="" fill className="object-cover opacity-40 mix-blend-multiply" />
       </div>
       <Container full>
-        <div className="relative z-10 grid lg:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+        <div className="relative z-10 grid lg:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:py-24">
           <div className="text-white">
             <h1 id="incubator-hero-heading" className="font-extrabold text-[42px] md:text-[64px] lg:text-[80px] leading-[1.05]">
               JASPA

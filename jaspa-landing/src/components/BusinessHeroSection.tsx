@@ -27,18 +27,18 @@ export const BusinessHeroSection: React.FC = () => {
       </div>
       
       <Container full>
-        <div className="relative z-10 pt-8 md:pt-6 pb-0 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-5 lg:gap-6 items-center">
+        <div className="relative z-10 pt-24 md:pt-6 pb-12 md:pb-0 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-4 lg:gap-6 items-center">
             {/* Left Image */}
-            <div className="relative lg:w-[520px] flex-shrink-0 mt-8 lg:mt-10 xl:mt-14 order-2 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative lg:w-[520px] flex-shrink-0 mt-4 lg:mt-10 xl:mt-14 order-2 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden mx-auto w-[280px] md:w-[420px]">
                 {!imgError ? (
                   <Image
                     src={heroUrl}
                     alt="Business hero"
-                    width={500}
-                    height={560}
-                    className="rounded-2xl object-contain w-full h-auto max-h-[440px]"
+                    width={280}
+                    height={414}
+                    className="rounded-2xl object-contain w-full h-auto"
                     onError={() => setImgError(true)}
                     priority
                   />
@@ -50,24 +50,24 @@ export const BusinessHeroSection: React.FC = () => {
 
             {/* Right Content */}
             <div className="space-y-6 flex flex-col lg:min-h-[60vh] justify-center items-center lg:items-end text-center lg:text-right lg:pr-12 xl:pr-16 order-1 lg:order-2">
-              <h1 id="business-hero-heading" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase leading-tight tracking-tight">
+              <h1 id="business-hero-heading" className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-white uppercase leading-tight tracking-tight">
                 YOUR PARTNER
                 <br />
                 IN BUSINESS
                 <br />
                 GROWTH
               </h1>
-              <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-[520px] lg:ml-auto lg:text-right">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed max-w-[520px] lg:ml-auto lg:text-right">
                 From SME loans to corporate banking, Jaspa
                 <br />
                 gives your business the financial tools to
                 <br />
                 grow and thrive—securely and sustainably.
               </p>
-              <div className="lg:ml-auto">
+              <div className="hidden md:block lg:ml-auto">
                 <CertRow />
               </div>
-              <div className="pt-4 flex justify-center lg:justify-end">
+              <div className="pt-4 hidden md:flex justify-center lg:justify-end">
                 <Button 
                   size="lg" 
                   href="/download"
@@ -79,6 +79,21 @@ export const BusinessHeroSection: React.FC = () => {
                 </Button>
               </div>
             </div>
+          </div>
+          {/* Mobile CTA and certs below image */}
+          <div className="mt-0 flex justify-center md:hidden">
+            <Button 
+              size="lg" 
+              href="/download"
+              ariaLabel="Open a Business Account"
+              className="px-8 py-4"
+              rightIcon={<ArrowRight className="w-5 h-5" />}
+            >
+              Open a Business Account
+            </Button>
+          </div>
+          <div className="mt-12 md:hidden flex justify-center">
+            <CertRow />
           </div>
         </div>
       </Container>

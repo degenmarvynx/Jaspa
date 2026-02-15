@@ -42,7 +42,7 @@
         <div className="mt-2 relative">
           <select
             id="state-select"
-            className={`appearance-none w-full md:w-[300px] h-[70px] rounded-[8px] border-2 border-[#044ea4] px-6 pr-12 text-[#012e6d] text-[20px] font-medium ${selected ? 'bg-[#87b6ed]' : 'bg-white'} focus:outline-none focus:ring-2 focus:ring-[#044ea4]`}
+            className={`appearance-none w-full md:w?[300px] h-[56px] md:h-[70px] rounded-[8px] border-2 border-[#044ea4] px-4 md:px-6 pr-10 md:pr-12 text-[#012e6d] text-[16px] md:text-[20px] font-medium leading-[24px] md:leading-[28px] ${selected ? 'bg-[#87b6ed]' : 'bg-white'} focus:outline-none focus:ring-2 focus:ring-[#044ea4]`}
             aria-label="Select your state"
             value={selected}
             onChange={(e) => setSelected(e.target.value as StateKey)}
@@ -59,8 +59,8 @@
       </div>
       <div>
         <label className="block text-[#012e6d] text-[14px] font-extrabold">Jaspa Branch Locations</label>
-        <div className={`mt-2 border-2 border-[#044ea4] rounded-[8px] h-[70px] w-full flex items-center ${selected ? 'bg-[#87b6ed]' : 'bg-white'}`}>
-          <div className="px-6 text-[#012e6d] text-[18px] font-medium leading-[28px]">
+        <div className={`mt-2 border-2 border-[#044ea4] rounded-[8px] min-h-[56px] md:min-h-[70px] w-full flex items-start px-4 md:px-6 py-3 overflow-hidden ${selected ? 'bg-[#87b6ed]' : 'bg-white'}`}>
+          <div className="text-[#012e6d] text-[16px] md:text-[18px] font-medium leading-[24px] md:leading-[28px] break-words whitespace-normal">
             {message}
           </div>
         </div>

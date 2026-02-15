@@ -28,8 +28,8 @@ export const BusinessProgramsSection: React.FC = () => {
               <Button
                 href="/business/startup-incubator"
                 ariaLabel="Learn more about Startup Incubator"
-                className="px-[40px] py-[18px]"
-                size="lg"
+                className="w-1/2 self-start h-[44px] rounded-[10px] text-[12px] font-medium px-3 py-2 gap-2"
+                size="sm"
                 variant="primary"
               >
                 Learn More
@@ -85,8 +85,8 @@ export const BusinessProgramsSection: React.FC = () => {
               <Button
                 href="#partners"
                 ariaLabel="Learn more about Partnership Program"
-                className="px-[40px] py-[18px]"
-                size="lg"
+                className="w-1/2 h-[44px] rounded-[10px] text-[12px] font-medium px-3 py-2 gap-2"
+                size="sm"
                 variant="primary"
               >
                 Learn More
@@ -115,10 +115,10 @@ export const BusinessProgramsSection: React.FC = () => {
                 href="/download"
                 ariaLabel="Refer Now in the App"
                 variant="primary"
-                size="md"
-                className="w-full md:w-auto md:min-w-[424px] h-[56px] md:h-[71px] rounded-[10px] text-[16px] md:text-[22px] lg:text-[25px] font-semibold px-4 md:px-[35px] py-3 md:py-[21px]"
+                size="sm"
+                className="w-3/4 h-[44px] md:w-3/4 rounded-[10px] text-[12px] md:text-[14px] font-medium px-3 py-2 gap-2"
                 rightIcon={
-                  <svg width="66" height="12" viewBox="0 0 66 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <svg width="40" height="10" viewBox="0 0 66 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <line x1="0" y1="6" x2="58" y2="6" stroke="white" strokeWidth="2" />
                     <path d="M58 1 L66 6 L58 11 Z" fill="white" />
                   </svg>

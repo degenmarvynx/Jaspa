@@ -221,7 +221,7 @@ export default function ResourcesPage() {
             <div className="absolute inset-0 bg-[url('/figma/screenshot_683_209.png')] bg-cover bg-center opacity-60 mix-blend-multiply" aria-hidden="true" />
             <Container>
               <div className="absolute inset-0 flex items-center justify-center">
-                <h1 id="resources-title" className="z-10 text-white font-extrabold text-[36px] md:text-[56px] leading-[1.1]">
+                <h1 id="resources-title" className="z-10 text-white font-extrabold text-[28px] sm:text-[32px] md:text-[56px] leading-[1.1] text-center">
                   {mode === 'faq' ? 'Frequently Asked Questions' : mode === 'guides' ? 'How‑To Guides' : 'Resources'}
                 </h1>
               </div>
@@ -256,8 +256,8 @@ export default function ResourcesPage() {
                   aria-controls={`panel-${cat}`}
                   className={
                     boldActive
-                      ? 'relative w-full h-[85px] rounded-[8px] tab-focused text-[20px] font-semibold focus:outline-none'
-                      : `w-full h-[85px] rounded-[8px] bg-[#f5f5f5] text-[#044ea4] shadow-[0_4px_10px_0_#00000040] text-[18px] md:text-[20px] font-semibold ${selected ? 'ring-2 ring-[#87b6ed]' : ''} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#044ea4]`
+                      ? 'relative w-full h-[52px] md:h-[56px] min-h-[44px] rounded-[8px] tab-focused text-[16px] md:text-[18px] font-semibold focus:outline-none'
+                      : `w-full h-[52px] md:h-[56px] min-h-[44px] rounded-[8px] bg-[#f5f5f5] text-[#044ea4] shadow-[0_4px_10px_0_#00000040] text-[16px] md:text-[18px] font-semibold ${selected ? 'ring-2 ring-[#87b6ed]' : ''} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#044ea4]`
                   }
                   onClick={() => {
                     if (cat === 'FAQs') activateFAQ('tab');
@@ -294,78 +294,86 @@ export default function ResourcesPage() {
               {mode === 'faq' ? 'Frequently Asked Questions' : mode === 'guides' ? 'How‑To Guides' : mode === 'blog' ? 'Jaspa Blog' : 'Featured Resource Highlights'}
             </h2>
             {mode === 'featured' && (
-              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 [&>article]:w-full [&>article]:min-h-[280px] [&>article]:flex [&>article]:flex-col [&>article]:justify-between [&>article>div>img]:w-[90px] [&>article>div>img]:h-auto [&>article>div>div>h3]:text-[22px] md:[&>article>div>div>h3]:text-[26px] [&>article>button]:w-[250px] [&>article>button]:h-[70px] [&>article>button]:rounded-[10px] [&>article>button]:text-[20px] [&>article>button]:font-semibold transition-opacity duration-300">
-                <article className="mx-auto w-[320px] md:w-[360px] h-[300px] rounded-[20px] bg-[#044ea4] p-6 text-white flex flex-col justify-between" aria-label="FAQs highlight">
-                  <div className="flex items-start gap-4">
-                    <img src="/figma/screenshot_1075_940.png" alt="FAQs icon" className="w-[90px] h-auto" loading="lazy" />
-                    <div>
-                      <h3 className="font-semibold text-[24px] md:text-[26px]">FAQs</h3>
-                      <p className="mt-2 text-white/90 text-[14px] md:text-[16px] w-[317px] max-w-full">
-                        Get answers to some common queries and frequently asked questions.
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-8 gap-x-6">
+                {/* FAQs */}
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
+                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[128px_1fr_24px] md:gap-6 w-full">
+                    <img src="/figma/screenshot_1075_940.png" alt="FAQs icon" className="col-start-1 w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                    <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
+                    <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">FAQs</h3>
+                    <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
+                      Get answers to some common queries and frequently asked questions.
                       </p>
+                      <button
+                        className="mt-2.5 md:mt-6 bg-[#df2202] text-white rounded-[8px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202] text-[14px] md:text-[16px] px-4 py-2 md:px-5 md:py-3 min-h-[44px]"
+                        onClick={() => activateFAQ('card')}
+                        aria-label="Learn more about FAQs"
+                      >
+                        Check It Out
+                      </button>
                     </div>
+                    <div className="col-start-3" />
                   </div>
-                  <button
-                    className="self-start bg-[#df2202] text-white rounded-[10px] w-[250px] h-[70px] text-[20px] font-semibold"
-                    onClick={() => activateFAQ('card')}
-                    aria-label="Learn more about FAQs"
-                  >
-                    Learn More
-                  </button>
                 </article>
-                <article className="mx-auto w-[320px] md:w-[360px] h-[300px] rounded-[20px] bg-[#044ea4] p-6 text-white flex flex-col justify-between" aria-label="Guides highlight">
-                  <div className="flex items-start gap-4">
-                    <img src="/figma/screenshot_1078_941.png" alt="Guides icon" className="w-[90px] h-auto" loading="lazy" />
-                    <div>
-                      <h3 className="font-semibold text-[24px] md:text-[26px]">Guides</h3>
-                      <p className="mt-2 text-white/90 text-[14px] md:text-[16px]">
+                {/* Guides */}
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
+                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_128px] md:gap-6 w-full">
+                    <div className="col-start-1" />
+                    <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
+                      <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Guides</h3>
+                      <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
                         Step-by-step guides to help you use Jaspa’s products and services with ease.
                       </p>
+                      <button
+                        className="mt-2.5 md:mt-6 bg-[#df2202] text-white rounded-[8px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202] text-[14px] md:text-[16px] px-4 py-2 md:px-5 md:py-3 min-h-[44px]"
+                        onClick={() => activateGuides('card')}
+                        aria-label="Learn more about Guides"
+                      >
+                        Check It Out
+                      </button>
                     </div>
+                    <img src="/figma/screenshot_1078_941.png" alt="Guides icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
                   </div>
-                  <button
-                    className="self-start bg-[#df2202] text-white rounded-[10px] w-[250px] h-[70px] text-[20px] font-semibold"
-                    onClick={() => activateGuides('card')}
-                    aria-label="Learn more about Guides"
-                  >
-                    Learn More
-                  </button>
                 </article>
-                <article className="mx-auto w-[320px] md:w-[360px] h-[300px] rounded-[20px] bg-[#044ea4] p-6 text-white flex flex-col justify-between" aria-label="Calculator highlight">
-                  <div className="flex items-start gap-4">
-                    <img src="/figma/screenshot_1073_2322.png" alt="Calculator icon" className="w-[90px] h-auto" loading="lazy" />
-                    <div>
-                      <h3 className="font-semibold text-[24px] md:text-[26px]">Calculator</h3>
-                      <p className="mt-2 text-white/90 text-[14px] md:text-[16px]">
+                {/* Calculator */}
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
+                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[128px_1fr_24px] md:gap-6 w-full">
+                    <img src="/figma/screenshot_1073_2322.png" alt="Calculator icon" className="col-start-1 w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                    <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
+                      <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Calculator</h3>
+                      <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
                         Calculate your loan repayments instantly, and see what works best for your budget.
                       </p>
+                      <button
+                        className="mt-2.5 md:mt-6 bg-[#df2202] text-white rounded-[8px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202] text-[14px] md:text-[16px] px-4 py-2 md:px-5 md:py-3 min-h-[44px]"
+                        onClick={() => activateCalculator('card')}
+                        aria-label="Open Loan Calculator"
+                      >
+                        Check It Out
+                      </button>
                     </div>
+                    <div className="col-start-3" />
                   </div>
-                  <button
-                    className="self-start bg-[#df2202] text-white rounded-[10px] w-[250px] h-[70px] text-[20px] font-semibold"
-                    onClick={() => activateCalculator('card')}
-                    aria-label="Open Loan Calculator"
-                  >
-                    Check It Out
-                  </button>
                 </article>
-                <article className="mx-auto w-[320px] md:w-[360px] h-[300px] rounded-[20px] bg-[#044ea4] p-6 text-white flex flex-col justify-between" aria-label="Blog highlight">
-                  <div className="flex items-start gap-4">
-                    <img src="/figma/screenshot_1075_939.png" alt="Blog icon" className="w-[90px] h-auto" loading="lazy" />
-                    <div>
-                      <h3 className="font-semibold text-[24px] md:text-[26px]">Blog</h3>
-                      <p className="mt-2 text-white/90 text-[14px] md:text-[16px]">
+                {/* Blog */}
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
+                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_128px] md:gap-6 w-full">
+                    <div className="col-start-1" />
+                    <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
+                      <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Blog</h3>
+                      <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
                         Explore stories, updates, and expert insights that keep you ahead in your financial journey.
                       </p>
+                      <button
+                        className="mt-2.5 md:mt-6 bg-[#df2202] text-white rounded-[8px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202] text-[14px] md:text-[16px] px-4 py-2 md:px-5 md:py-3 min-h-[44px]"
+                        onClick={() => activateBlog('card')}
+                        aria-label="Open Blog"
+                      >
+                        Check It Out
+                      </button>
                     </div>
+                    <img src="/figma/screenshot_1075_939.png" alt="Blog icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
                   </div>
-                  <button
-                    className="self-start bg-[#df2202] text-white rounded-[10px] w-[250px] h-[70px] text-[20px] font-semibold"
-                    onClick={() => activateBlog('card')}
-                    aria-label="Open Blog"
-                  >
-                    Check It Out
-                  </button>
                 </article>
               </div>
             )}
@@ -664,7 +672,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">CBN to Expand Financial Inclusion Framework in 2025</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">New CBN policies aim to deepen micro credit penetration across underserved states.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                   <article className="bg-white rounded-[12px] shadow-[0_6px_24px_rgba(0,0,0,0.12)] overflow-hidden">
@@ -672,7 +680,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">Jaspa Launches New Business Account Layers</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">A simpler way for SMEs to segment spending and forecast cash flow.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                   <article className="bg-white rounded-[12px] shadow-[0_6px_24px_rgba(0,0,0,0.12)] overflow-hidden">
@@ -680,7 +688,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">Digital Payments Drive 67% of Urban Transactions</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">New data shows continued growth in cashless adoption.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                 </div>
@@ -690,7 +698,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">Understanding NDIC Deposit Insurance</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">What NDIC protection means for everyday customers of microfinance banks.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                   <article className="bg-white rounded-[12px] shadow-[0_6px_24px_rgba(0,0,0,0.12)] overflow-hidden">
@@ -698,7 +706,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">5 Ways POS Merchants Can Increase Revenue</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">Simple strategies to increase daily turnover and customer retention.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                   <article className="bg-white rounded-[12px] shadow-[0_6px_24px_rgba(0,0,0,0.12)] overflow-hidden">
@@ -706,7 +714,7 @@ export default function ResourcesPage() {
                     <div className="p-4">
                       <h4 className="text-[#044ea4] font-bold text-[18px]">Quick Guide: How to Apply for Jaspa POS</h4>
                       <p className="mt-2 text-[#012e6d] text-[14px]">Step-by-step process to get your device and activate it quickly.</p>
-                      <button className="mt-4 bg-[#df2202] text-white rounded-[7px] px-4 py-2">Check It Out</button>
+                      <button className="mt-4 bg-[#df2202] text-white rounded-[8px] px-5 py-3 min-h-[44px] text-[16px] font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#df2202]">Check It Out</button>
                     </div>
                   </article>
                 </div>

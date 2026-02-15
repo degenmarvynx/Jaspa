@@ -9,7 +9,7 @@ export const BuiltForYouSection: React.FC = () => {
       <Container>
         <div className="relative grid lg:grid-cols-2 gap-8 lg:gap-12 items-center overflow-hidden">
           {/* Background circle anchored to bottom-left, behind image (Ellipse 1 style) */}
-          <div className="hidden md:block absolute -left-[700px] -bottom-[650px] w-[1200px] h-[1200px] rounded-full border-[50px] border-[#df2202] z-0" />
+          <div className="hidden md:block absolute -left-[700px] -bottom-[650px] w-[1200px] h-[1200px] rounded-full border-[40px] border-[#df2202] z-0" />
           <div className="relative order-2 lg:order-1 md:mr-0 lg:mr-0 xl:mr-0 flex justify-center lg:justify-start">
             <div className="relative rounded-[30px] border-[5px] border-[#df2202] overflow-hidden w-[320px] h-[320px] md:w-[450px] md:h-[450px]">
               <Image src="/figma/group-455.png" alt="Two people" fill className="object-cover" />

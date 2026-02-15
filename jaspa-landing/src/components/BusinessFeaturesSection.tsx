@@ -82,28 +82,28 @@ export const BusinessFeaturesSection: React.FC = () => {
               <div className="flex w-full">
                 {cards.map((c) => (
                   <div key={c.title} className="snap-center w-full flex-shrink-0 px-4">
-                    <div className="rounded-[15px] shadow-[0_4px_10px_0_#00000040] bg-[#87b6ed] p-[10px] pb-[18px]">
-                      <div className={`border-[3px] border-jaspa-red rounded-[10px] bg-white ${c.innerPad} flex justify-center`}>
-                        <Image src={c.icon} alt={c.title.replace(/\n/g, ' ')} width={c.iconW} height={c.iconH} />
+                    <div className="rounded-[15px] shadow-[0_4px_10px_0_#00000040] bg-[#87b6ed] p-[10px]">
+                      <div className="grid grid-cols-[140px_1fr] items-center gap-3">
+                        <div className={`border-[3px] border-jaspa-red rounded-[10px] bg-white ${c.innerPad} flex justify-center`}>
+                          <Image src={c.icon} alt={c.title.replace(/\n/g, ' ')} width={c.iconW} height={c.iconH} />
+                        </div>
+                        <div className="pr-2">
+                          <h3 className="text-[#012e6d] text-[16px] font-semibold leading-[22px] whitespace-pre-line">
+                            {c.title}
+                          </h3>
+                          <p className="mt-[6px] text-[#012e6d] text-[12px] leading-[18px]">
+                            {c.desc}
+                          </p>
+                        </div>
                       </div>
-                      <h3 className="mt-[12px] ml-[8px] text-[#012e6d] text-[16px] leading-[24px] font-medium whitespace-pre-line">
-                        {c.title}
-                      </h3>
-                      <p className="mt-[8px] ml-[8px] text-[#012e6d] text-[12px] leading-[18px] font-medium">
-                        {c.desc}
-                      </p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <button aria-label="Previous" onClick={onPrev} className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#df2202] text-white w-8 h-8 rounded-full flex items-center justify-center">‹</button>
-            <button aria-label="Next" onClick={onNext} className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#df2202] text-white w-8 h-8 rounded-full flex items-center justify-center">›</button>
-            <div className="mt-3 flex justify-center gap-2">
-              {cards.map((_, i) => (
-                <span key={i} className={`w-2 h-2 rounded-full ${i===index ? 'bg-[#044ea4]' : 'bg-[#87b6ed]'}`}></span>
-              ))}
-            </div>
+            <button aria-label="Previous" onClick={onPrev} className="absolute left-3 top-1/2 -translate-y-1/2 bg-[#df2202] text-white w-10 h-10 rounded-full shadow-[0_4px_10px_#00000040] flex items-center justify-center">‹</button>
+            <button aria-label="Next" onClick={onNext} className="absolute right-3 top-1/2 -translate-y-1/2 bg-[#df2202] text-white w-10 h-10 rounded-full shadow-[0_4px_10px_#00000040] flex items-center justify-center">›</button>
+            
           </div>
           <div className="hidden md:flex flex-wrap lg:flex-nowrap justify-center gap-8 md:gap-9 lg:gap-10">
             {cards.map((c) => (

@@ -18,7 +18,7 @@ export const CSRHero: React.FC = () => {
             </p>
           </div>
           <div className="relative flex justify-center md:justify-end">
-            <div className="absolute -right-40 -bottom-40 w-[900px] h-[900px] rounded-full border-[50px] border-[#df2202] opacity-80 pointer-events-none -z-10" />
+            <div className="absolute -right-40 -bottom-40 w-[900px] h-[900px] rounded-full border-[40px] border-[#df2202] opacity-80 pointer-events-none -z-10" />
             <div className="relative w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-[30px] border-[5px] border-[#df2202] overflow-hidden">
               <Image src="/figma/csr-portrait.png" alt="" fill className="object-cover" />
               <div className="absolute inset-0 rounded-[30px] bg-[#012e6d]/30" />

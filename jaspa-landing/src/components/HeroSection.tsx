@@ -22,10 +22,10 @@ export const HeroSection: React.FC = () => {
       </div>
       
       <Container>
-        <div className="relative z-10 pt-8 md:pt-6 pb-0">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 pt-24 md:pt-6 pb-8 md:pb-0">
+          <div className="grid lg:grid-cols-2 gap-2 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-6 flex flex-col lg:min-h-[60vh] justify-center items-center md:items-start text-center md:text-left">
+            <div className="space-y-6 flex flex-col lg:min-h-[60vh] justify-center items-center md:items-start text-center md:text-left order-1">
               
               {/* Headline */}
               <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-white uppercase leading-tight tracking-tight">
@@ -48,8 +48,8 @@ export const HeroSection: React.FC = () => {
               {/* Certifications Row */}
               <CertRow />
               
-              {/* CTA Button */}
-              <div className="pt-4">
+              {/* CTA Button (desktop/tablet) */}
+              <div className="pt-4 hidden md:flex">
                 <Button 
                   size="lg" 
                   href="/download"
@@ -63,14 +63,14 @@ export const HeroSection: React.FC = () => {
             </div>
             
             {/* Right Image */}
-            <div className="relative lg:bottom-0 lg:right-0 lg:w-[645px] lg:translate-y-[2px]">
-              <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative lg:bottom-0 lg:right-0 lg:w-[645px] lg:translate-y-[2px] order-2 flex justify-center lg:block">
+              <div className="relative rounded-2xl overflow-hidden mx-auto w-[280px] md:w-[420px] lg:w-[560px] xl:w-[680px]">
                 {!imgError ? (
                   <Image
                     src={heroUrl}
                     alt="Jaspa hero"
-                    width={645}
-                    height={708}
+                    width={680}
+                    height={1005}
                     className="rounded-2xl object-contain w-full h-auto"
                     onError={() => setImgError(true)}
                     priority
@@ -78,10 +78,22 @@ export const HeroSection: React.FC = () => {
                 ) : (
                   <div className="aspect-[4/3] bg-gradient-to-br from-blue-700 to-blue-600 rounded-2xl" />
                 )}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-jaspa-red/20 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-jaspa-orange/20 rounded-full blur-lg"></div>
+                <div className="hidden md:block absolute -top-4 -right-4 w-24 h-24 bg-jaspa-red/20 rounded-full blur-xl"></div>
+                <div className="hidden md:block absolute -bottom-4 -left-4 w-16 h-16 bg-jaspa-orange/20 rounded-full blur-lg"></div>
               </div>
             </div>
+          </div>
+          {/* CTA Button (mobile, below image) */}
+          <div className="mt-0 flex justify-center md:hidden">
+            <Button 
+              size="lg" 
+              href="/download"
+              ariaLabel="Open a Personal Account - Download our mobile app"
+              className="px-8 py-4"
+              rightIcon={<ArrowRight className="w-5 h-5" />}
+            >
+              Open a Personal Account
+            </Button>
           </div>
         </div>
       </Container>

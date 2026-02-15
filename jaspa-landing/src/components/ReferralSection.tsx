@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 export const ReferralSection: React.FC = () => {
   return (
     <section className="py-16 lg:py-24 bg-white relative overflow-hidden pb-32 md:pb-[75px]">
-      <div className="hidden md:block absolute -right-[200px] -top-[180px] w-[600px] h-[600px] rounded-full border-[24px] border-[#df2202] z-0"></div>
+      <div className="hidden md:block absolute -right-[200px] -top-[180px] w-[600px] h-[600px] rounded-full border-[40px] border-[#df2202] z-0"></div>
       <Container>
         <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Left Content */}
