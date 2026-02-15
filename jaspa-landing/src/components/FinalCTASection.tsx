@@ -13,7 +13,7 @@ interface FinalCTAProps {
 export const FinalCTASection: React.FC<FinalCTAProps> = ({
   title = 'Join thousands of Nigerians already banking the smart way.',
   buttonLabel = 'Open a Personal Account',
-  href = '#open-account',
+  href = '/download',
   ariaLabel = 'Open a Personal Account - Download our mobile app',
 }) => {
   return (

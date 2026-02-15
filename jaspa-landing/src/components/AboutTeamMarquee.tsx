@@ -14,11 +14,11 @@ const members: Member[] = [
   { img: '/figma/team-eno.png', name: 'Eno Vwaire', role: 'Managing Director' },
   { img: '/figma/team-paul.png', name: 'Paul Adeoye', role: 'Operations Manager' },
   { img: '/figma/team-chidinma.png', name: 'Chidinma Ifenatuora', role: 'Customer Services Manager' },
-  { img: '/figma/IMG-20260214-WA0001.jpg.jpeg', name: 'Ezegbu Dennis', role: 'Dev Team' },
+  { img: '/figma/IMG-20260214-WA0001.jpg.jpeg', name: 'Dennis Ezegbu', role: 'Dev Team' },
 ];
 
 const Card: React.FC<Member> = ({ img, name, role }) => {
-  const isDennis = name === 'Ezegbu Dennis';
+  const isDennis = name.includes('Dennis');
   return (
     <div className="flex flex-col items-center w-[280px] md:w-[320px]">
       <div className="rounded-[15px] overflow-hidden w-[260px] h-[290px] md:w-[300px] md:h-[330px] shadow-[0_4px_20px_#00000040] bg-[#012e6d]">

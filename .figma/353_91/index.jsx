@@ -6,11 +6,11 @@ const Component = () => {
   return (
     <div className={styles.group74}>
       <img
-        src="../image/mlgesb2s-75n4rwz.png"
+        src="../image/mlnylnyn-j4uvgqv.png"
         className={styles.rectangleDotsGradien}
       />
       <img
-        src="../image/mlgesb2s-z7plg1h.png"
+        src="../image/mlnylnyo-5rr383h.png"
         className={styles.rectangleDotsGradien2}
       />
     </div>

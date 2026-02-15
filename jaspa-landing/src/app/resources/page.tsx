@@ -296,9 +296,9 @@ export default function ResourcesPage() {
             {mode === 'featured' && (
               <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-8 gap-x-6">
                 {/* FAQs */}
-                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
-                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[128px_1fr_24px] md:gap-6 w-full">
-                    <img src="/figma/screenshot_1075_940.png" alt="FAQs icon" className="col-start-1 w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10 overflow-hidden">
+                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[96px_1fr_24px] md:gap-4 w-full">
+                    <img src="/figma/screenshot_1075_940.png" alt="FAQs icon" className="col-start-1 w-[56px] h-[56px] object-contain max-w-full md:w-[96px] md:h-[96px]" loading="lazy" />
                     <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
                     <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">FAQs</h3>
                     <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
@@ -316,8 +316,8 @@ export default function ResourcesPage() {
                   </div>
                 </article>
                 {/* Guides */}
-                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
-                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_128px] md:gap-6 w-full">
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10 overflow-hidden">
+                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_96px] md:gap-4 w-full">
                     <div className="col-start-1" />
                     <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
                       <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Guides</h3>
@@ -332,13 +332,13 @@ export default function ResourcesPage() {
                         Check It Out
                       </button>
                     </div>
-                    <img src="/figma/screenshot_1078_941.png" alt="Guides icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                    <img src="/figma/screenshot_1078_941.png" alt="Guides icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain max-w-full md:w-[96px] md:h-[96px]" loading="lazy" />
                   </div>
                 </article>
                 {/* Calculator */}
-                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
-                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[128px_1fr_24px] md:gap-6 w-full">
-                    <img src="/figma/screenshot_1073_2322.png" alt="Calculator icon" className="col-start-1 w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10 overflow-hidden">
+                  <div className="grid grid-cols-[56px_1fr_24px] items-start gap-4 md:grid md:grid-cols-[96px_1fr_24px] md:gap-4 w-full">
+                    <img src="/figma/screenshot_1073_2322.png" alt="Calculator icon" className="col-start-1 w-[56px] h-[56px] object-contain max-w-full md:w-[96px] md:h-[96px]" loading="lazy" />
                     <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
                       <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Calculator</h3>
                       <p className="mt-1.5 md:mt-4 text-[#f5f5f5] text-[13px] md:text-[18px] leading-[20px] md:leading-[28px] w-full text-left">
@@ -356,8 +356,8 @@ export default function ResourcesPage() {
                   </div>
                 </article>
                 {/* Blog */}
-                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10">
-                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_128px] md:gap-6 w-full">
+                <article className="rounded-[15px] bg-[#044ea4] text-white px-4 py-5 md:px-8 md:py-10 overflow-hidden">
+                  <div className="grid grid-cols-[24px_1fr_56px] items-start gap-4 md:grid md:grid-cols-[24px_1fr_96px] md:gap-4 w-full">
                     <div className="col-start-1" />
                     <div className="col-start-2 flex flex-col items-start w-[220px] md:w-[317px]">
                       <h3 className="font-semibold text-[20px] md:text-[34px] leading-[1.25] md:leading-[40px] text-left">Blog</h3>
@@ -372,7 +372,7 @@ export default function ResourcesPage() {
                         Check It Out
                       </button>
                     </div>
-                    <img src="/figma/screenshot_1075_939.png" alt="Blog icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain md:w-[128px] md:h-[128px]" loading="lazy" />
+                    <img src="/figma/screenshot_1075_939.png" alt="Blog icon" className="col-start-3 justify-self-end w-[56px] h-[56px] object-contain max-w-full md:w-[96px] md:h-[96px]" loading="lazy" />
                   </div>
                 </article>
               </div>

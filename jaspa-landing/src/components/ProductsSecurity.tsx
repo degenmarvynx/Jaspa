@@ -32,25 +32,25 @@ const IconServices = () => (
 export const ProductsSecurity: React.FC = () => {
   return (
     <section className="relative py-12 md:py-16 overflow-hidden">
-      <div className="absolute -left-[420px] bottom-[-420px] w-[900px] h-[900px] rounded-full border-[40px] border-[#df2202] pointer-events-none z-0" />
+      <div className="hidden md:block absolute -left-[420px] bottom-[-420px] w-[900px] h-[900px] rounded-full border-[40px] border-[#df2202] pointer-events-none z-0" />
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start relative z-10">
-          <div className="relative w-[320px] h-[320px] md:w-[480px] md:h-[480px] rounded-[30px] border-[5px] border-[#df2202] overflow-hidden">
+          <div className="order-2 md:order-1 relative w-[320px] h-[320px] md:w-[480px] md:h-[480px] rounded-[30px] border-[5px] border-[#df2202] overflow-hidden mx-auto">
             <ImageWithFallback src="/figma/screenshot_1334_1237.png" alt="" fill className="object-cover" />
             <div className="absolute inset-0 bg-[#012e6d]/30 rounded-[30px]" />
           </div>
-          <div className="max-w-[637px]">
-            <h3 className="text-[#044ea4] font-extrabold text-[32px] md:text-[44px] leading-[1.1] text-right">
+          <div className="order-1 md:order-2 max-w-[637px]">
+            <h3 className="text-[#044ea4] font-extrabold text-[32px] md:text-[44px] leading-[1.1] text-center md:text-right">
               Uncompromising
               <br />
               Security
             </h3>
-            <p className="mt-6 text-right text-[#012e6d] text-[16px] md:text-[22px] leading-[26px] md:leading-[35px]">
+            <p className="mt-6 text-left md:text-right text-[#012e6d] text-[16px] md:text-[22px] leading-[26px] md:leading-[35px]">
               Security is at the core of Jaspa’s technology. Our fraud-prevention framework uses multi-layer detection systems that identify and block suspicious activity before it happens. We employ bank-grade encryption, regular security audits, and intelligent monitoring to ensure that customers’ funds and data remain fully protected.
             </p>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-1 relative z-10">
+        <div className="mt-10 hidden md:grid grid-cols-1 md:grid-cols-3 gap-1 relative z-10">
           <div className="bg-[#044ea4] rounded-[20px] w-[260px] h-[340px] p-5 text-white text-center mx-auto flex flex-col">
             <div className="mx-auto -mt-10 mb-4 w-[56px] h-[56px] rounded-[10px] bg-[#df2202] flex items-center justify-center">
               <Image src="/figma/screenshot_853_370.png" alt="" width={36} height={36} className="object-contain" />

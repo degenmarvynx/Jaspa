@@ -109,7 +109,11 @@ export const Footer: React.FC = () => {
             </div>
             <div>
               <div className="min-h-[56px] md:min-h-[64px] flex items-end">
-                <h3 className="text-xl font-extrabold leading-[24px] md:leading-[32px] whitespace-nowrap pb-2">{footerSections[1].title}</h3>
+                <h3 className="text-xl font-extrabold leading-[24px] md:leading-[32px] whitespace-nowrap pb-2">
+                  {footerSections[1].title === 'Products & Services' ? (
+                    <>Products &<br />Services</>
+                  ) : footerSections[1].title}
+                </h3>
               </div>
               <ul className="list-none m-0 p-0 pr-0 pl-0 w-full space-y-2">
                 {footerSections[1].links.map((link) => (
@@ -131,7 +135,11 @@ export const Footer: React.FC = () => {
             {footerSections.map((section) => (
               <div key={section.title}>
                 <div className="min-h-[64px] flex items-end">
-                  <h3 className="text-2xl font-extrabold leading-[32px] whitespace-nowrap pb-5">{section.title}</h3>
+                  <h3 className="text-2xl font-extrabold leading-[32px] whitespace-nowrap pb-5">
+                    {section.title === 'Products & Services' ? (
+                      <>Products &<br />Services</>
+                    ) : section.title}
+                  </h3>
                 </div>
                 <ul className="list-none m-0 p-0 pr-0 pl-0 w-full space-y-2.5">
                   {section.links.map((link) => (
@@ -150,32 +158,74 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Badges left, Social right */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-6">
             <Image src="/figma/get-badges-original.png" alt="Get it on Google Play and App Store" width={340} height={70} />
-            <div className="flex flex-col items-start">
-              <h3 className="text-base font-semibold mb-3 text-left">Connect With Us</h3>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-whatsapp.png" alt="WhatsApp" width={24} height={24} />
+            <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
+              <h3 className="text-base font-semibold mb-3 text-center md:text-left">Connect With Us</h3>
+              <div className="flex items-center justify-center gap-2 md:gap-3 mx-auto md:mx-0 px-2">
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://wa.me/2347043424383"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-whatsapp.png" alt="WhatsApp" width={20} height={20} />
+                </a>
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://www.instagram.com/jaspa_ng?igsh=MWt1MDJuMjVpa2Z5NA=="
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-instagram.png" alt="Instagram" width={20} height={20} />
+                </a>
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://www.facebook.com/share/1A9CQQMxmQ/?mibextid=wwXIfr"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-facebook.png" alt="Facebook" width={18} height={18} />
+                </a>
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://www.linkedin.com/company/jaspanig"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-linkedin.png" alt="LinkedIn" width={20} height={20} />
+                </a>
+                <div
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] opacity-80 rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  aria-label="X link coming soon"
+                  role="link"
+                  aria-disabled="true"
+                  title="X link coming soon"
+                >
+                  <Image src="/figma/icon-x.png" alt="X" width={20} height={18} />
                 </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-instagram.png" alt="Instagram" width={24} height={24} />
-                </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-facebook.png" alt="Facebook" width={14} height={14} />
-                </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-linkedin.png" alt="LinkedIn" width={24} height={24} />
-                </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-x.png" alt="X" width={24} height={22} />
-                </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-tiktok.png" alt="TikTok" width={22} height={24} />
-                </div>
-                <div className="w-12 h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center">
-                  <Image src="/figma/icon-youtube.png" alt="YouTube" width={24} height={18} />
-                </div>
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://www.tiktok.com/@jaspa_ng"
+                  aria-label="TikTok"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-tiktok.png" alt="TikTok" width={18} height={20} />
+                </a>
+                <a
+                  className="w-9 h-9 md:w-12 md:h-12 bg-[#df2202] rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center"
+                  href="https://youtube.com/@jaspa_ng?si=HknAEA238XfFfZCN"
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src="/figma/icon-youtube.png" alt="YouTube" width={20} height={16} />
+                </a>
               </div>
             </div>
           </div>

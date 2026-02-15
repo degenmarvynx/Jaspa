@@ -6,6 +6,7 @@ interface ButtonProps {
   size?: 'sm' | 'md' | 'lg';
   onClick?: () => void;
   href?: string;
+  newTab?: boolean;
   className?: string;
   ariaLabel?: string;
   rightIcon?: React.ReactNode;
@@ -17,6 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'md',
   onClick,
   href,
+  newTab = false,
   className = '',
   ariaLabel,
   rightIcon,
@@ -43,8 +45,8 @@ export const Button: React.FC<ButtonProps> = ({
         className={classes}
         onClick={onClick}
         aria-label={ariaLabel}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={newTab ? '_blank' : undefined}
+        rel={newTab ? 'noopener noreferrer' : undefined}
       >
         {children}
         {rightIcon}

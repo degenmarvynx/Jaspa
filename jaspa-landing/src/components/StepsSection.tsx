@@ -44,6 +44,8 @@ export const StepsSection: React.FC = () => {
   return (
     <section className="py-12 lg:py-20 bg-[#044ea4] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
+        {/* Dotted background from top, full width, mobile-safe */}
+        <div className="absolute inset-0 bg-dotted-pattern bg-dotted-md opacity-30" aria-hidden="true" />
         <div className="relative w-full h-full">
           {/* Top Group 74: span full width */}
           <div className="absolute opacity-15 rotate-180 inset-x-0 top-0 h-[344px]">

@@ -10,7 +10,7 @@ export const AboutHero: React.FC = () => {
         <div className="absolute inset-0 bg-[#012e6d] opacity-40 mix-blend-multiply" aria-hidden="true" />
         <Container>
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-center text-white font-extrabold text-[28px] md:text-[34px] lg:text-[40px] leading-[1.1]">
+            <h1 className="text-center text-white font-extrabold text-[36px] md:text-[56px] leading-[1.1]">
               About Us
             </h1>
           </div>
