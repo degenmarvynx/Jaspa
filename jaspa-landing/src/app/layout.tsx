@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   description: 'Jaspa Microfinance Bank provides secure savings, flexible loans, and digital banking solutions. Join thousands of Nigerians banking the smart way.',
   keywords: 'microfinance, banking, savings, loans, digital banking, Nigeria, Jaspa',
   icons: {
-    icon: '/figma/jaspa-logo.png',
-    shortcut: '/figma/jaspa-logo.png',
-    apple: '/figma/jaspa-logo.png',
+    icon: '/figma/favicon.jpeg',
+    shortcut: '/figma/favicon.jpeg',
+    apple: '/figma/favicon.jpeg',
   },
   openGraph: {
     title: 'Jaspa MFB - Bank Smart. Live Free.',

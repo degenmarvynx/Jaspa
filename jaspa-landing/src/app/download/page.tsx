@@ -34,8 +34,22 @@ export default function DownloadPage() {
               </div>
               <div className="order-3 lg:order-none">
                 <div className="mt-6 flex items-center justify-center lg:justify-start gap-4">
-                  <Image src="/figma/screenshot_479_301.png" alt="Get it on Google Play" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
-                  <Image src="/figma/screenshot_479_303.png" alt="Download on the App Store" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.jaspa.fintech&pcampaignid=web_share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Get it on Google Play"
+                  >
+                    <Image src="/figma/screenshot_479_301.png" alt="Get it on Google Play" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/ng/app/jaspa-nig/id6752602240"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download on the App Store"
+                  >
+                    <Image src="/figma/screenshot_479_303.png" alt="Download on the App Store" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
+                  </a>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ const members: Member[] = [
   { img: '/figma/team-paul.png', name: 'Paul Adeoye', role: 'Operations Manager' },
   { img: '/figma/team-chidinma.png', name: 'Chidinma Ifenatuora', role: 'Customer Services Manager' },
   { img: '/figma/IMG-20260214-WA0001.jpg.jpeg', name: 'Dennis Ezegbu', role: 'Dev Team' },
+  { img: '/figma/20260118_133048.jpg.jpeg', name: 'Ebinimi Cosmus', role: 'Dev Team' },
 ];
 
 const Card: React.FC<Member> = ({ img, name, role }) => {

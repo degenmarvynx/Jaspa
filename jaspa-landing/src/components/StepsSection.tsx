@@ -92,15 +92,24 @@ export const StepsSection: React.FC = () => {
               <Image src="/figma/finale-1.png" alt="Jaspa mobile app" width={240} height={516} className="rounded-2xl" />
               <div className="text-center">
                 <h3 className="text-xl font-bold text-white mb-6">Download the App</h3>
-                <a
-                  href="#download-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Get it on Google Play and Download on the App Store"
-                  className="inline-block filter drop-shadow-[0_4px_40px_rgba(0,0,0,0.25)]"
-                >
-                  <Image src="/figma/get-badges-white.png" alt="Get it on Google Play and Download on the App Store" width={482} height={70} />
-                </a>
+                <div className="flex items-center justify-center gap-4 filter drop-shadow-[0_4px_40px_rgba(0,0,0,0.25)]">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.jaspa.fintech&pcampaignid=web_share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Get it on Google Play"
+                  >
+                    <Image src="/figma/screenshot_479_301.png" alt="Get it on Google Play" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/ng/app/jaspa-nig/id6752602240"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download on the App Store"
+                  >
+                    <Image src="/figma/screenshot_479_303.png" alt="Download on the App Store" width={210} height={64} className="rounded-[8px] border-2 border-[#044ea4] bg-white" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -159,7 +159,24 @@ export const Footer: React.FC = () => {
 
           {/* Badges left, Social right */}
           <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-6">
-            <Image src="/figma/get-badges-original.png" alt="Get it on Google Play and App Store" width={340} height={70} />
+            <div className="flex items-center justify-center gap-3">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.jaspa.fintech&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get it on Google Play"
+              >
+                <Image src="/figma/screenshot_479_301.png" alt="Get it on Google Play" width={170} height={52} className="rounded-[6px] border border-white/20 bg-white" />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/jaspa-nig/id6752602240"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download on the App Store"
+              >
+                <Image src="/figma/screenshot_479_303.png" alt="Download on the App Store" width={170} height={52} className="rounded-[6px] border border-white/20 bg-white" />
+              </a>
+            </div>
             <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
               <h3 className="text-base font-semibold mb-3 text-center md:text-left">Connect With Us</h3>
               <div className="flex items-center justify-center gap-2 md:gap-3 mx-auto md:mx-0 px-2">
