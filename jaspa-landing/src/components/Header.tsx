@@ -44,14 +44,14 @@ export const Header: React.FC = () => {
     <header className="bg-[#044ea4] shadow-none fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       <Container>
         {/* Mobile Bar */}
-        <div className="md:hidden grid grid-cols-3 items-center py-2">
-          <div className="pl-2">
+        <div className="md:hidden grid grid-cols-[auto_1fr_auto] items-center px-3 py-2 gap-2">
+          <div className="justify-self-start">
             <Link href="/" className="flex flex-col items-start gap-1">
               <Image src="/figma/jaspa-logo.png" alt="JASPA" width={80} height={30} priority />
               <span className="text-white text-[8px] italic">Bank Smart. Live Free.</span>
             </Link>
           </div>
-          <div className="flex items-center justify-center gap-3 ml-2">
+          <div className="flex items-center justify-center gap-2 sm:gap-3">
             <PillButton
               label="Personal"
               href="/"
@@ -67,7 +67,7 @@ export const Header: React.FC = () => {
               onClick={() => setActiveSegment('business')}
             />
           </div>
-          <div className="flex items-center justify-end pr-2">
+          <div className="justify-self-end">
             <MobileMenu isOpen={isMenuOpen} onToggle={toggleMenu} />
           </div>
         </div>

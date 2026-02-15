@@ -28,7 +28,7 @@ export const HeroSection: React.FC = () => {
             <div className="space-y-6 flex flex-col lg:min-h-[60vh] justify-center items-center md:items-start text-center md:text-left order-1">
               
               {/* Headline */}
-              <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-white uppercase leading-tight tracking-tight">
+              <h1 id="hero-heading" className="text-3xl md:text-5xl lg:text-5xl font-extrabold text-white uppercase leading-[1.1] md:leading-tight tracking-tight">
                 BANK YOUR WAY
                 <br />
                 TO FINANCIAL
@@ -37,12 +37,8 @@ export const HeroSection: React.FC = () => {
               </h1>
               
               {/* Subtext */}
-              <p className="text-sm md:text-lg text-white/90 leading-relaxed max-w-xl">
-                At Jaspa Microfinance Bank, we provide secure<br />
-                savings, flexible loans, and digital banking<br />
-                solutions that help you take control of your money.<br />
-                With us, financial freedom isn't just a dream—it's<br />
-                within your reach.
+              <p className="text-[14px] md:text-lg text-white/90 leading-[22px] md:leading-relaxed max-w-[640px]">
+                At Jaspa Microfinance Bank, we provide secure savings, flexible loans, and digital banking solutions that help you take control of your money. With us, financial freedom isn&apos;t just a dream—it&apos;s within your reach.
               </p>
 
               {/* Certifications Row */}
@@ -54,7 +50,7 @@ export const HeroSection: React.FC = () => {
                   size="lg" 
                   href="/download"
                   ariaLabel="Open a Personal Account - Download our mobile app"
-                  className="px-8 py-4"
+                  className="px-5 py-3 text-[15px] md:text-[16px] whitespace-nowrap"
                   rightIcon={<ArrowRight className="w-5 h-5" />}
                 >
                   Open a Personal Account
@@ -89,7 +85,7 @@ export const HeroSection: React.FC = () => {
               size="lg" 
               href="/download"
               ariaLabel="Open a Personal Account - Download our mobile app"
-              className="px-8 py-4"
+              className="px-5 py-3 text-[15px] whitespace-nowrap"
               rightIcon={<ArrowRight className="w-5 h-5" />}
             >
               Open a Personal Account

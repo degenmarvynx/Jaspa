@@ -11,7 +11,7 @@ export const BusinessHeroSection: React.FC = () => {
   const heroUrl = '/figma/business-homepage-1-1.png';
   return (
     <section 
-      className="bg-gradient-to-br from-[#0A3D9E] via-[#053279] to-[#031F55] relative overflow-hidden min-h-[65vh] flex items-center w-screen -mx-[calc(50vw-50%)]"
+      className="bg-gradient-to-br from-[#0A3D9E] via-[#053279] to-[#031F55] relative overflow-hidden min-h-screen md:min-h-[65vh] flex items-center w-screen -mx-[calc(50vw-50%)]"
       aria-labelledby="business-hero-heading"
     >
       {/* Full-screen background */}
@@ -27,7 +27,7 @@ export const BusinessHeroSection: React.FC = () => {
       </div>
       
       <Container full>
-        <div className="relative z-10 pt-24 md:pt-6 pb-12 md:pb-0 px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 pt-24 md:pt-6 pb-8 md:pb-0 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-4 lg:gap-6 items-center">
             {/* Left Image */}
             <div className="relative lg:w-[520px] flex-shrink-0 mt-4 lg:mt-10 xl:mt-14 order-2 lg:order-1">

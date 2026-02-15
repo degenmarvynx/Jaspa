@@ -29,7 +29,7 @@ export const FinalCTASection: React.FC<FinalCTAProps> = ({
               size="lg"
               href={href}
               ariaLabel={ariaLabel}
-              className="px-6 py-3"
+              className="px-5 py-3 text-[15px] md:text-[16px] whitespace-nowrap"
               rightIcon={<ArrowRight className="w-5 h-5" />}
             >
               {buttonLabel}

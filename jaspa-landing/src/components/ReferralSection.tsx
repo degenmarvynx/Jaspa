@@ -13,7 +13,7 @@ export const ReferralSection: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <h2 className="text-[54px] md:text-[70px] leading-[60px] md:leading-[75px] font-extrabold text-[#044ea4]">
+            <h2 className="text-[44px] md:text-[60px] leading-[50px] md:leading-[66px] font-extrabold text-[#044ea4]">
               Refer Friends, Earn Rewards
             </h2>
             
